@@ -6,11 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Kalunga - Papelaria, Materiais para Escritório e Informática" name="keywords">
-    <meta content="Papelaria, Material de Escritório, Informática, Impressoras e Cartuchos, Material Escolar e muito mais. A Kalunga tem tudo que você precisa num só lugar." name="description">
+    <meta content="Papelaria, Material de Escritório, Informática, Impressoras e Cartuchos, 
+    Material Escolar e muito mais. A Kalunga tem tudo que você precisa num só lugar." name="description">
     
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <link href="assets/css/reset.css" rel="stylesheet" /><!-- CSS reset -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-    <link  type="css" href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
+      <!-- Owl Stylesheets -->
+      <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+   
+	<script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -21,98 +30,322 @@
  
   
 </head>
-<body>
-     <!-- Responsive navbar-->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container px-lg-5">
-            <a class="navbar-brand" href="#!">Start Bootstrap</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                </ul>
-            </div>
+<body>         
+    <header class="cd-main-header bg-header">
+        <div class="content-header p-3 ">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <h1> 
+                        <a href="#">
+                            <img width="116" height="31" src="assets/img/logo/logo-kalunga-branco.svg"" alt="Kalunga - Papelaria, Materiais de Escritório e Informática" class="componentheader__logo--image img-fluid" data-sizes="auto"> 
+                        <span style="opacity: 0; position: absolute; font-size: .75rem;">Kalunga - Papelaria, Materiais de Escritório e Informática</span> 
+                        </a>
+                    </h1>
+          
+                  <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                  </ul>
+          
+                  <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark " placeholder="Digite aqui sua busca ..." aria-label="Search">
+                  </form>
+                  
+                  <div class="dropdown text-end">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" style="">
+                      <li><a class="dropdown-item" href="#">New project...</a></li>
+                      <li><a class="dropdown-item" href="#">Settings</a></li>
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                  </div>
+    
+                  <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                  </div>
+    
+               
+                  <!-- mobile-->
+                  <div class="cd-header-buttons">			
+                    <a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a>
+                   </div> <!-- cd-header-buttons -->
+                  <!---->
+                </div>
+              </div>   
         </div>
-    </nav>
-    <!-- Header-->
-    <header class="py-5">
-        <div class="container px-lg-5">
-            <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-                <div class="m-4 m-lg-5">
-                    <h1 class="display-5 fw-bold">A warm welcome!</h1>
-                    <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p>
-                    <a class="btn btn-primary btn-lg" href="#!">Call to action</a>
-                </div>
+         <div class="content-departamento">
+             <div class="container">
+                <nav class="nav">
+                    <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+                        <li class="has-children">
+                            <a href="http://codyhouse.co/?p=409">Clothing</a>
+            
+                            <ul class="cd-secondary-nav is-hidden">
+                                <li class="go-back"><a href="#0">Menu</a></li>
+                                <li class="see-all"><a href="http://codyhouse.co/?p=409">All Clothing</a></li>
+                                <li class="has-children">
+                                    <a href="http://codyhouse.co/?p=409">Accessories</a>
+            
+                                    <ul class="is-hidden">
+                                        <li class="go-back"><a href="#0">Clothing</a></li>
+                                        <li class="see-all"><a href="http://codyhouse.co/?p=409">All Accessories</a></li>
+                                        <li class="has-children">
+                                            <a href="#0">Beanies</a>
+            
+                                            <ul class="is-hidden">
+                                                <li class="go-back"><a href="#0">Accessories</a></li>
+                                                <li class="see-all"><a href="http://codyhouse.co/?p=409">All Benies</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Caps &amp; Hats</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Gifts</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Scarves &amp; Snoods</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="#0">Caps &amp; Hats</a>
+            
+                                            <ul class="is-hidden">
+                                                <li class="go-back"><a href="#0">Accessories</a></li>
+                                                <li class="see-all"><a href="http://codyhouse.co/?p=409">All Caps &amp; Hats</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Beanies</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Caps</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Hats</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="http://codyhouse.co/?p=409">Glasses</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Gloves</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Jewellery</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Scarves</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Wallets</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Watches</a></li>
+                                    </ul>
+                                </li>
+            
+                                <li class="has-children">
+                                    <a href="http://codyhouse.co/?p=409">Bottoms</a>
+            
+                                    <ul class="is-hidden">
+                                        <li class="go-back"><a href="#0">Clothing</a></li>
+                                        <li class="see-all"><a href="http://codyhouse.co/?p=409">All Bottoms</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Casual Trousers</a></li>
+                                        <li class="has-children">
+                                            <a href="#0">Jeans</a>
+            
+                                            <ul class="is-hidden">
+                                                <li class="go-back"><a href="#0">Bottoms</a></li>
+                                                <li class="see-all"><a href="http://codyhouse.co/?p=409">All Jeans</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Ripped</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Skinny</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Slim</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Straight</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#0">Leggings</a></li>
+                                        <li><a href="#0">Shorts</a></li>
+                                    </ul>
+                                </li>
+            
+                                <li class="has-children">
+                                    <a href="http://codyhouse.co/?p=409">Jackets</a>
+            
+                                    <ul class="is-hidden">
+                                        <li class="go-back"><a href="#0">Clothing</a></li>
+                                        <li class="see-all"><a href="http://codyhouse.co/?p=409">All Jackets</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Blazers</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Bomber jackets</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Denim Jackets</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Duffle Coats</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Leather Jackets</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Parkas</a></li>
+                                    </ul>
+                                </li>
+            
+                                <li class="has-children">
+                                    <a href="http://codyhouse.co/?p=409">Tops</a>
+            
+                                    <ul class="is-hidden">
+                                        <li class="go-back"><a href="#0">Clothing</a></li>
+                                        <li class="see-all"><a href="http://codyhouse.co/?p=409">All Tops</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Cardigans</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Coats</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Hoodies &amp; Sweatshirts</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Jumpers</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Polo Shirts</a></li>
+                                        <li><a href="http://codyhouse.co/?p=409">Shirts</a></li>
+                                        <li class="has-children">
+                                            <a href="#0">T-Shirts</a>
+            
+                                            <ul class="is-hidden">
+                                                <li class="go-back"><a href="#0">Tops</a></li>
+                                                <li class="see-all"><a href="http://codyhouse.co/?p=409">All T-shirts</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Plain</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Print</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Striped</a></li>
+                                                <li><a href="http://codyhouse.co/?p=409">Long sleeved</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="http://codyhouse.co/?p=409">Vests</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+            
+                        <li class="has-children">
+                            <a href="http://codyhouse.co/?p=409">Gallery</a>
+            
+                            <ul class="cd-nav-gallery is-hidden">
+                                <li class="go-back"><a href="#0">Menu</a></li>
+                                <li class="see-all"><a href="http://codyhouse.co/?p=409">Browse Gallery</a></li>
+                                <li>
+                                    <a class="cd-nav-item" href="http://codyhouse.co/?p=409">
+                                        <img src="img/img.jpg" alt="Product Image">
+                                        <h3>Product #1</h3>
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a class="cd-nav-item" href="http://codyhouse.co/?p=409">
+                                        <img src="img/img.jpg" alt="Product Image">
+                                        <h3>Product #2</h3>
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a class="cd-nav-item" href="http://codyhouse.co/?p=409">
+                                        <img src="img/img.jpg" alt="Product Image">
+                                        <h3>Product #3</h3>
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a class="cd-nav-item" href="http://codyhouse.co/?p=409">
+                                        <img src="img/img.jpg" alt="Product Image">
+                                        <h3>Product #4</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+            
+                        <li class="has-children">
+                            <a href="http://codyhouse.co/?p=409">Services</a>
+                            <ul class="cd-nav-icons is-hidden">
+                                <li class="go-back"><a href="#0">Menu</a></li>
+                                <li class="see-all"><a href="http://codyhouse.co/?p=409">Browse Services</a></li>
+                                <li>
+                                    <a class="cd-nav-item item-1" href="http://codyhouse.co/?p=409">
+                                        <h3>Service #1</h3>
+                                        <p>This is the item description</p>
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a class="cd-nav-item item-2" href="http://codyhouse.co/?p=409">
+                                        <h3>Service #2</h3>
+                                        <p>This is the item description</p>
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a class="cd-nav-item item-3" href="http://codyhouse.co/?p=409">
+                                        <h3>Service #3</h3>
+                                        <p>This is the item description</p>
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a class="cd-nav-item item-4" href="http://codyhouse.co/?p=409">
+                                        <h3>Service #4</h3>
+                                        <p>This is the item description</p>
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a class="cd-nav-item item-5" href="http://codyhouse.co/?p=409">
+                                        <h3>Service #5</h3>
+                                        <p>This is the item description</p>
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a class="cd-nav-item item-6" href="http://codyhouse.co/?p=409">
+                                        <h3>Service #6</h3>
+                                        <p>This is the item description</p>
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a class="cd-nav-item item-7" href="http://codyhouse.co/?p=409">
+                                        <h3>Service #7</h3>
+                                        <p>This is the item description</p>
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a class="cd-nav-item item-8" href="http://codyhouse.co/?p=409">
+                                        <h3>Service #8</h3>
+                                        <p>This is the item description</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+            
+                        <li><a href="#">Standard</a></li>
+                    </ul> <!-- primary-nav -->
+                  </nav> <!-- cd-nav -->
+             </div>
+         </div>
+		
+         
+	
+
+     
+	</header>
+
+  
+
+
+
+      <main class="cd-main-content">
+		<section id="bannerHome">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><h4>1</h4></div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+                <div class="item"><h4>6</h4></div>
+                <div class="item"><h4>7</h4></div>
+                <div class="item"><h4>8</h4></div>
+                <div class="item"><h4>9</h4></div>
+                <div class="item"><h4>10</h4></div>
+                <div class="item"><h4>11</h4></div>
+                <div class="item"><h4>12</h4></div>
             </div>
-        </div>
-    </header>
-    <!-- Page Content-->
-    <section class="pt-4">
-        <div class="container px-lg-5">
-            <!-- Page Features-->
-            <div class="row gx-lg-5">
-                <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
-                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
-                            <h2 class="fs-4 fw-bold">Fresh new layout</h2>
-                            <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
-                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-cloud-download"></i></div>
-                            <h2 class="fs-4 fw-bold">Free to download</h2>
-                            <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
-                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-card-heading"></i></div>
-                            <h2 class="fs-4 fw-bold">Jumbotron hero header</h2>
-                            <p class="mb-0">The heroic part of this template is the jumbotron hero header!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
-                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-bootstrap"></i></div>
-                            <h2 class="fs-4 fw-bold">Feature boxes</h2>
-                            <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
-                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
-                            <h2 class="fs-4 fw-bold">Simple clean code</h2>
-                            <p class="mb-0">We keep our dependencies up to date and squash bugs as they come!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
-                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
-                            <h2 class="fs-4 fw-bold">A name you trust</h2>
-                            <p class="mb-0">Start Bootstrap has been the leader in free Bootstrap templates since 2013!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+	 </main>
+     <!-- -->
+     <div class="cd-overlay "></div>
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
     </footer>
+    <script src="assets/js/jquery-2.1.1.js"></script>
+    <script src="assets/js/jquery.mobile.custom.min.js"></script>
+    
+     <script src="assets/js/jquery.min.js"></script>
+     <script src="assets/js/owl.carousel.js"></script>
+     <script src="assets/js/highlight.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <script src="assets/js/main.js"></script> <!-- Resource jQuery -->
+    <!-- javascript -->
+   
 </body>
 </html>

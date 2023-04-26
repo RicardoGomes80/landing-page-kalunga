@@ -1,21 +1,33 @@
 jQuery(document).ready(function($){
 
-	$('.owl-carousel').owlCarousel({
+	// $('.homeBanner').owlCarousel({
+	// 	loop:true,
+	// 	margin:0,
+	// 	nav:true,
+	// 	responsive:{
+	// 		0:{
+	// 			items:1
+	// 		},
+	// 		600:{
+	// 			items:1
+	// 		},
+	// 		1000:{
+	// 			items:1
+	// 		}
+	// 	}
+	// })
+
+	var owl = $('.homeBanner');
+	owl.owlCarousel({
+		items:1,
 		loop:true,
-		margin:10,
 		nav:true,
-		responsive:{
-			0:{
-				items:1
-			},
-			600:{
-				items:1
-			},
-			1000:{
-				items:1
-			}
-		}
-	})
+		margin:0,
+		autoplay:true,
+		autoplayTimeout:5000,
+		autoplayHoverPause:true
+	});
+	
 	//if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
 	var MqL = 1170;
 	//move nav element position according to window width

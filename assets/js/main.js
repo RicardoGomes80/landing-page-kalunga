@@ -16,6 +16,28 @@ jQuery(document).ready(function($){
 	// 		}
 	// 	}
 	// })
+	$('.toolbarhomeKalunga').owlCarousel({
+		
+		nav:true,
+		loop:false,
+		margin:10,
+		items:4,
+		responsive:{
+			0:{
+				items: 2,
+				center: true,
+				
+			},
+			600:{
+				items:2,
+				center: true,
+			},
+			1000:{
+				items:4,
+				center: false
+			}
+		}
+	});
 
 	var owl = $('.homeBanner');
 	owl.owlCarousel({

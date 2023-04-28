@@ -24,17 +24,15 @@ jQuery(document).ready(function($){
 		items:4,
 		responsive:{
 			0:{
-				items: 2,
-				center: true,
+				items: 3
 				
 			},
 			600:{
-				items:2,
-				center: false,
+				items:3,				
 			},
 			1000:{
 				items:10,
-				center: false
+				
 			}
 		}
 	});

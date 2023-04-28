@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
 		
 		nav:true,
 		loop:false,
-		margin:10,
+		margin:5,
 		items:4,
 		responsive:{
 			0:{
@@ -30,10 +30,10 @@ jQuery(document).ready(function($){
 			},
 			600:{
 				items:2,
-				center: true,
+				center: false,
 			},
 			1000:{
-				items:4,
+				items:10,
 				center: false
 			}
 		}
